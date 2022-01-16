@@ -1,1 +1,1 @@
-Demo that show how to use GitHub Projects
+All files for the Integration 3 project
