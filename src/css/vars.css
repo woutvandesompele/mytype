@@ -1,0 +1,19 @@
+:root {
+  --colorMain: cyan;
+  --colorTodayBackground: #b1faff;
+  --opacityTodayBackground: .4;
+  --colorButtonBackground: #71b9c9;
+  --opacityButtonBackground: .4;
+  --spacerSmall: .75rem; /* 12px */
+  --spacerRegular: 1rem; /* 16px */
+  --spacerBig: 1.88rem; /* 30px */
+  --fontSmall: .75rem; /* 12px */
+  --fontRegular: 1.13rem; /* 18px */
+  --fontMedium: 1.25rem; /* 20px */
+  --fontBig: 1.75rem; /* 28px */
+  --fontWeightRegular: 400;
+  --fontWeightBold: 500;
+  --colorCyan: rgb(0, 253, 253);
+  --fontTitle: 'UK', sans-serif;
+  --fontBody: 'Mina', sans-serif;
+}

@@ -1,0 +1,546 @@
+@import './reset.css';
+@import './vars.css';
+@import './style.css';
+
+@custom-selector :--containermargin .userlist__container, .userlist__info__container, .userlist__create__container;
+
+.content {
+  font-family: var(--fontBody);
+}
+
+.erroruserlist {
+  height: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  font-size: .8rem;
+  padding-top: .4rem;
+  color: white;
+}
+
+.userlist__username {
+  font-family: var(--fontBody);
+}
+
+.hacking__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.hacking {
+
+  font-family: var(--fontTitle);
+  text-decoration: underline;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hacking__subtitle {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.errorall {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1rem;
+  padding-top: .5rem;
+  text-align: right;
+}
+
+.userlist__navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(6, 253, 253, .2);
+  border-bottom: .2rem solid var(--colorCyan);
+}
+
+.userlist__logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.userlist__logo:hover {
+  padding: .1rem;
+  border: .2rem solid white;
+  border-radius: 50%;
+}
+
+.userlist__logo:active {
+  background-color: cyan;
+}
+
+.userlist__title__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.userlist__title {
+  font-size: 1.5rem;
+  font-family: var(--fontTitle);
+}
+
+.userlist__logout {
+  width: 4rem;
+  padding: .2rem;
+  height: 3rem;
+  background-color: rgba(6, 253, 253, .2);
+  border: .2rem solid var(--colorCyan);
+}
+
+.userlist__logout:hover {
+  border: .2rem solid white;
+}
+
+.userlist__logout:active {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.planner__manageaccounts {
+  width: 9rem;
+  padding: .2rem;
+  text-align: center;
+  height: 3rem;
+  background-color: rgba(6, 253, 253, .2);
+  border: .2rem solid var(--colorCyan);
+  margin-right: .8rem;
+}
+
+.planner__manageaccounts:hover {
+  color: white;
+  border: .2rem solid white;
+}
+
+.planner__manageaccounts:active {
+  color: white;
+  border: .2rem solid white;
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.userlist__manage__button {
+  height: 2rem;
+  font-size: 1.2rem;
+  font-family: var(--fontTitle);
+  text-align: center;
+}
+
+.userlist__manage__button:hover {
+  color: white;
+}
+
+.userlist__manage__button:active {
+  font-size: 1.15rem;
+}
+
+.userlist__logout__button {
+  height: 2rem;
+  font-size: 1.2rem;
+  font-family: var(--fontTitle);
+  text-align: center;
+}
+
+.userlist__logout__button:hover {
+  color: white;
+}
+
+.userlist__logout__button:active {
+  font-size: 1.15rem;
+}
+
+.button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.userlist__container {
+  overflow: auto;
+  height: 27.5rem;
+  background-color: rgba(6, 253, 253, .2);
+  border: .2rem solid var(--colorCyan);
+}
+
+.userlist__info__container {
+  background-color: rgba(6, 253, 253, .2);
+  border: .2rem solid var(--colorCyan);
+  border-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+.userlist__info__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas: 'info__rank info__name info__password';
+  padding: 1rem;
+  font-size: .8rem;
+  font-family: var(--fontTitle);
+}
+
+.userlist__info__rank {
+  grid-area: info__rank;
+}
+
+.userlist__info__name {
+  grid-area: info__name;
+  display: flex;
+  justify-content: center;
+}
+
+.userlist__info__password {
+  grid-area: info__password;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.users__container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas: 'user__rank user__name user__password' 'delete__user delete__user user__higherup ';
+  background-color: rgba(6, 253, 253, .2);
+  border: .2rem solid var(--colorCyan);
+  margin: .2rem;
+  padding: 1rem;
+  grid-gap: .3rem;
+}
+
+.user__rank {
+  grid-area: user__rank;
+}
+
+.user__name {
+  grid-area: user__name;
+  display: flex;
+  justify-content: center;
+}
+
+.user__password {
+  grid-area: user__password;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user__higherup {
+  grid-area: user__higherup;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-self: center;
+  justify-self: flex-end;
+  margin-top: .5rem;
+}
+
+.delete__user--link {
+  grid-area: delete__user;
+  text-align: center;
+  width: 10rem;
+  padding: .2rem;
+  background-color: rgba(6, 253, 253, .2);
+  border: .2rem solid var(--colorCyan);
+  margin-top: 1rem;
+  font-family: var(--fontTitle);
+}
+
+.delete__user--link:hover {
+  color: white;
+  border-color: white;
+  cursor: pointer;
+}
+
+.delete__user--link:active {
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.userlist__search__title {
+  font-family: var(--fontTitle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.userlist__search__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.userlist__searchform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.userlist__searchform__input {
+  width: 15rem;
+  background-color: rgba(6, 253, 253, .2);
+  border-color: var(--colorCyan);
+}
+
+.userlist__create__title {
+  font-family: var(--fontTitle);
+  text-align: center;
+  margin: 1rem;
+  margin-bottom: 1.7rem;
+}
+
+.userlist__create__container {
+  padding: .5rem;
+  margin-top: 1rem;
+  background-color: rgba(6, 253, 253, .2);
+  border: .2rem solid var(--colorCyan);
+}
+
+.form__title {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.userlist__create__input {
+  background-color: rgba(240, 255, 255, .2);
+  border-color: var(--colorCyan);
+  width: 10rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.colorcyan {
+  color: cyan;
+}
+
+.userlist__filter__input {
+  background-color: rgba(240, 255, 255, .2);
+  border-color: var(--colorCyan);
+  width: 8rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.userlist__filter__container {
+  display: flex;
+  margin: 1rem;
+}
+
+.userlist__submit__button {
+  font-family: var(--fontTitle);
+  color: var(--ColorCyan);
+  background-color: rgba(6, 253, 253, .2);
+  border-color: var(--colorCyan);
+  margin-right: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.userlist__submit__button:hover {
+  cursor: pointer;
+  color: white;
+  border-color: white;
+}
+
+.userlist__submit__button:active {
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.userlist__createbottom__container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.userlist__submit__container {
+  margin-top: .5rem;
+}
+
+.select {
+  color: var(--ColorCyan);
+  background-color: rgba(6, 253, 253, .2);
+  border-color: var(--colorCyan);
+  margin-right: 1rem;
+  cursor: pointer;
+  width: 3rem;
+}
+
+.errorborder {
+  border: .2rem solid white;
+}
+
+.userlist__HUD__img {
+  height: 270px;
+  width: 270px;
+}
+
+.userlist__HUD__container {
+  display: none;
+}
+
+.input__title {
+  padding-bottom: .4rem;
+}
+
+@media only screen and (min-width: 380px) {
+
+  .userlist__container {
+    margin: 2rem;
+    margin-top: 0;
+  }
+
+  .userlist__info__container {
+    margin: 2rem;
+    margin-bottom: 0;
+  }
+
+  .userlist__create__container {
+    margin: 2rem;
+  }
+
+  .input__title {
+    padding-bottom: 0;
+  }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+  :--containermargin {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .userlist__createform {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 670px) {
+
+  .userlist__createform {
+    margin: 0;
+  }
+
+  .userlist__create__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 0;
+    grid-template-areas: 'HUD formCreate''HUD formCreate';
+  }
+
+  .userlist__HUD__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .userlist__HUD {
+    grid-area: HUD;
+  }
+
+  .userlist__searchform {
+    grid-area: formCreate;
+    flex-direction: row;
+  }
+
+  .input__title {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  .userlist__create__title {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  :--containermargin {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .userlist__navigation {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .form__title {
+    margin-right: 4rem;
+  }
+
+  .erroruserlist {
+    padding-right: 4rem;
+  }
+
+  .userlist__createbottom__container {
+    margin-right: 4rem;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .userlist__navigation {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  :--containermargin {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  :--containermargin {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .userlist__navigation {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .userlist__info__container {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+
+  :--containermargin {
+    margin-left: 35rem;
+    margin-right: 35rem;
+  }
+
+  .userlist__navigation {
+    padding-left: 35rem;
+    padding-right: 35rem;
+  }
+}

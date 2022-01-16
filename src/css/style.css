@@ -1,0 +1,48 @@
+@import './reset.css';
+@import './vars.css';
+@import './planner.css';
+@import './login.css';
+@import './userlist.css';
+@import './detail.css';
+
+@font-face {
+  font-family: UK;
+  src: url(../assets/fonts/United-Kingdom-DEMO.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Mina;
+  src: url(../assets/fonts/Mina-Regular.woff2) format('woff2');
+}
+
+html {
+  box-sizing: border-box;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  color: cyan;
+}
+
+/* stylelint-disable */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* stylelint-enable */
+
+body {
+  background-image: url(../assets/img/background.jpeg), -webkit-linear-gradient(top, #14227d, black);
+  background-blend-mode: soft-light;
+  font-family: UK, sans-serif;
+  background-repeat: repeat;
+  background-size: 80rem;
+}
+
+.redborder {
+  border: .2rem solid white;
+}
+
+.error {
+  color: white;
+}
