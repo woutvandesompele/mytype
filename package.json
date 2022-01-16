@@ -18,7 +18,7 @@
     "resolve-url-loader": "^4.0.0",
     "style-loader": "^3.3.0",
     "stylelint-config-devine": "^2.0.3",
-    "webpack": "^5.56.1",
+    "webpack": "^5.66.0",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.3.1"
   },
@@ -27,5 +27,6 @@
     "prod": "rm -rf dist/ && webpack --mode production"
   },
   "author": "Frederik Duchi",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": []
 }
