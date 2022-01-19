@@ -1,7 +1,7 @@
 {
-  "name": "webpack-template",
+  "name": "webpack-php-template",
   "version": "1.0.0",
-  "description": "template for a webpack project",
+  "description": "template for a webpack project with php",
   "main": "index.js",
   "devDependencies": {
     "css-loader": "^6.3.0",
@@ -18,15 +18,20 @@
     "resolve-url-loader": "^4.0.0",
     "style-loader": "^3.3.0",
     "stylelint-config-devine": "^2.0.3",
-    "webpack": "^5.66.0",
+    "webpack": "^5.56.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.3.1"
   },
   "scripts": {
     "dev": "webpack-dev-server --mode development",
-    "prod": "rm -rf dist/ && webpack --mode production"
+    "prod": "npm run clean && npm run copydist && webpack --mode production",
+    "copydist": "rsync -a --exclude=*.css --exclude=*.js ./src/ ./dist",
+    "clean": "rm -rf ./dist",
+    "heroku-postbuild": "npm run prod"
   },
   "author": "Frederik Duchi",
   "license": "ISC",
-  "keywords": []
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }

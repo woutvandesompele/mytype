@@ -1,4 +1,4 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+//const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const postcssPresetEnv = require('postcss-preset-env');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -8,14 +8,18 @@ module.exports = (env, {mode}) => {
   console.log(mode);
   return {
     output: {
-      filename: '[name].[fullhash].js'
+      filename: 'script.js'
     },
     devServer: {
-      hot: true
+      hot: true,
+      port: 3000,
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      }
     },
     module: {
       rules: [
-        {
+        /*{
           test: /\.html$/,
           use: [
             {
@@ -25,7 +29,7 @@ module.exports = (env, {mode}) => {
               }
             }
           ]
-        },
+        },*/
         {
           test: /\.(jpe?g|png|svg|webp)$/,
           type: 'asset/resource'
@@ -53,12 +57,12 @@ module.exports = (env, {mode}) => {
       ]
     },
     plugins: [
-      new HtmlWebPackPlugin({
+      /*new HtmlWebPackPlugin({
         template: './src/index.html',
         filename: './index.html'
-      }),
+      }),*/
       new MiniCssExtractPlugin({
-        filename: 'style.[contenthash].css'
+        filename: 'style.css'
       }),
       new OptimizeCSSAssetsPlugin(),
       new webpack.HotModuleReplacementPlugin()
