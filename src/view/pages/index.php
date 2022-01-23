@@ -14,7 +14,27 @@
     </div>
   </section>
 
-  <section class="tragedy"></section>
+  <section class="tragedy">
+    <div class="tragedy__title">
+      <p>A tragedy has</p>
+      <div class="tragedy__title--struck">
+        <p class="struck--s">s</p>
+        <p class="struck--t">t</p>
+        <p class="struck--r">r</p>
+        <p class="struck--u">u</p>
+        <p class="struck--c">c</p>
+        <p class="struck--k">k</p>
+      </div>
+    </div>
+    <div class="tragedy__text">
+      <p>
+        In 1788 Giambattista Bodoni made published one of his biggest books ever. The <span>Manuale Tipografico</span>. It represents one of history's greatest typographical achievements. Bodoni has gotten a lot of praise for it at his time. It was made in order of the Duke of Parma. He as well showed its praise for the book: in 1789,  the Duke stated “well-designed type derived its beauty from four principles: uniformity of design, sharpness and neatness, good taste, and charm. All of which come together in La Manuale Tipografico.”
+        Shortly after the release of the first book, Bodoni decided to make a second edition, showing his new aquired skills and printing an even more impressive collection of typefaces.
+
+        But on November 30th 1813 a tragedy struck: Giambattista Bodoni <span>died</span>, leaving the second edition of the Manuale Tipografico unfinished. A great piece of history, never to be published. This would be an absolute tragedy for the world of typographers.
+      </p>
+    </div>
+  </section>
 
   <section class="unthinkable"></section>
 
