@@ -123,6 +123,12 @@
 
   <section class="characteristics"></section>
 
+  <section class="end">
+    <p>Thanks to</p>
+    <p>Margheritta Dall'Aglio Bodoni</p>
+    <p>the legacy lives on</p>
+  </section>
+
 
 </main>
 
