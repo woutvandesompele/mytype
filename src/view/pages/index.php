@@ -63,7 +63,21 @@
     </p>
   </section>
 
-  <section class="righthand"></section>
+  <section class="righthand">
+    <div class="righthand__title">
+      <p>B</p>
+      <p><span>odoni</span>'s</p>
+      <p>right</p>
+      <p>hand</p>
+    </div>
+    <p class="righthand__text">
+      Bodoni was born in Piedmont, Saluzzo. His father and grandfather were both printers in Piedmont. At the age of 17 he travelled to Rome where he mastered the skill of printing. After five years of learning he planned to move to England, which typography then florished under Baskerville's influence. But unfortunatly that year he succumbed to Tertian fever (Malaria). This lead him back to Saluzzo.
+
+      When the Duke of Parma made plans to open a Royal Press in Parma, his father recommended him. He got accepted, therefore Parma was now his new residence. This is where Margherita and Bodoni met. Margherita, who was born in Parma, never left the city since she met her husband there, and also worked for the printing house.
+
+      1791 was a special year for Bodoni who "in this year ... established the time of his greatest typographical fame, and the increase of his fortune, so that from the same year he repeated with the greatest pleasure in his domestic happiness." Margherita married Bodoni and was "his loving and inconsolable wife who, for twenty-two years, enlightened his labors with her lively, equable, and sweet character, beautifying his life, and prolonging its course by the most zealous and tender care."
+    </p>
+  </section>
 
   <section class="shadow"></section>
 
