@@ -79,7 +79,18 @@
     </p>
   </section>
 
-  <section class="shadow"></section>
+  <section class="shadow">
+    <h2 class="shadow__title">In the shadow of her man</h2>
+    <p class="shadow__text">
+      Because Margheritta met Bodoni, she has had some great opportunities to work for the Royal Press. Because of Bodoni she was able to refine here typographic and printing skills. She was able to discover numerous of beautiful cities where Bodoni went. Although she was probably very greatful for that, their is also the reverse of the medal.
+
+      Although that we can see that she has oustanding skill in printing and typography, she will always be remembered as the widow of Bodoni. The wife that finished the book of Bodoni.
+
+      She isn't the first women that has to suffer this fate. From the 15th century to the beginning of the 19th century, the printing and publishing of books was a family business, so women and daughters developed the basic skills to continue the work of their husbands or parents. That is why most women who have excelled in the world of publishing or typography are known as "the widow of ...", forgetting, as in many other moments in history and facets of art, their own work, talent and contribution they have made to history.
+
+      But during the nineteenth century there were a number of radical changes resulting from the Industrial Revolution, which had an impact on the consideration of the space they occupied and the work that women did within the production process. The business ceased to be familiar and business structures changed. The printing presses were led by men, and women were diverted to other areas of the process, such as illustration and binding.
+    </p>
+  </section>
 
   <section class="uncertainty"></section>
 
