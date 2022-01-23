@@ -100,7 +100,15 @@
       Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus tempus orci non auctor ullamcorper.
     </p>
 
-  <section class="hidden"></section>
+  <section class="hidden">
+    <h2 class="hidden__title">Margheritta's hidden talents</h2>
+    <div  class="hidden__text1">
+      Passionate about music, she was elected a regular member of the Ducal Parmens Philharmonic Society on April 2, 1825.
+    </div>
+    <div  class="hidden__text2">
+      She became member of Accademia degli Unanimi , of which she was made an honorary member on 26/12/1796, with the name "L'Eccelsa."
+    </div>
+  </section>
 
   <section class="defines"></section>
 
