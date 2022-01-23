@@ -36,7 +36,21 @@
     </div>
   </section>
 
-  <section class="unthinkab"></section>
+<section class="unthinkable">
+    <h2 class="unthinkable__title">Margherita does the un <span>____</span> thinkable</h2>
+    <div class="unthinkable__text">
+      <p>Five years after the events all hope for the Manuale was lost. Until, in 1818 Margherita Dall’ Aglio, the widow of Bodoni made a miracle happened. Margherita had managed to complete the entire book, with the help of her assistant Luigi Orsi.
+
+      The second edition was published in two volumes, it was over 600 pages long and contained 265 pages of roman characters, “imperceptibly declining in size, romans, italics, and script types, and the series of 125 capital letters; 181 pages of Greek and Oriental characters; 1036 decorations and 31 borders; followed in the last 20 pages by symbols, ciphers, numerals, and musical examples.
+
+      An absolute masterpiece in the world of typography. It was very impressive that the widow of Bodoni had so much skill to make this possible. Some were suprised, some may even have been sceptical of how this was possible. The question arrised: Who is Margherita Bodoni?
+
+      And it is to her that we owe the publication in 1818, of the Manuale Tipografico of the Cavaliere Giambattista Bodoni, the typographer's immense effort that lasted a lifetime and was realized only thanks to this woman who "knew well the gravity of the load I had to carry; but I gathered all my strength; love for him and for his glory sustained them; and I bravely set out on the task, so that Italy and Europe would not be deprived of such a distinguished monument of typography".</p>
+    </div>
+    <img class="unthinkable__margherita" src="./assets/planets/" height="256"></img>
+    <img class="unthinkable__layer1" src="./assets/planets/" height="256"></img>
+    <img class="unthinkable__layer2" src="./assets/planets/" height="256"></img>
+  </section>
 
   <section class="italy"></section>
 
