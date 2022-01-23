@@ -133,7 +133,16 @@
 </main>
 
 <footer class="footer">
-
+  <img class="footer__slanted" src="./assets/planets/"></img>
+  <p class="footer__text">Did this article about Giambattista Bodoni and his wife scratch your graphic design itch? This is a lot more discover in the world of graphic and contemporary art. Two times a year Slanted publishes a magazine containing some of the best artistic works form all around the globe. All magazines handle a general theme, the first books focus on a specific world changing city. The current magazines focus on colors, shapes and technological advancements in our sector. Slanted inspires.</p>
+  <div class="footer__magazine"><img class="magazine__picture" src="./assets/planets/"></img><h3 class="magazine__title">CHECK OUT OUR LATEST MAGAZINE</h3><p class="magazine__text">The issue celebrates happiness, joy of life, power, symbolism, and the meaning of color. We look...</p></div>
+  <div class="footer__socials">
+  <img class="socials__twitter" src="./assets/planets/"></img>
+  <img class="socials__facebook" src="./assets/planets/"></img>
+  <img class="socials__instagram" src="./assets/planets/"></img>
+  <img class="socials__youtube" src="./assets/planets/"></img>
+  </div>
+  <p class="footer__license">&copy; slanted publishers 2022</p>
 </footer>
 
 
