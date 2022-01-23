@@ -110,7 +110,16 @@
     </div>
   </section>
 
-  <section class="defines"></section>
+  <section class="defines">
+    <div class="defines__title">
+      <p>What</p>
+      <p>defines</p>
+      <p>a Bodoni?</p>
+    </div>
+    <p class="defines__intro">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo, felis ac volutpat bibendum, elit orci consequat risus, ac lacinia purus libero et lorem. In venenatis consequat diam eget efficitur. Nullam sed magna eget arcu ultrices.
+    </p>
+  </section>
 
   <section class="characteristics"></section>
 
