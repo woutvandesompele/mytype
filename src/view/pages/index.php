@@ -36,7 +36,7 @@
     </div>
   </section>
 
-  <section class="unthinkable"></section>
+  <section class="unthinkabl"></section>
 
   <section class="italy"></section>
 
