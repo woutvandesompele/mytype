@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image" href="./assets/img/logo.png">
   <?php echo $css; ?>
-  <title>Rebel Planner</title>
+  <title>Margherita Dall'Aglio</title>
 </head>
 <body>
   <div class="content__container">

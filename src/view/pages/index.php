@@ -1,3 +1,73 @@
+<header class="header">
+
+</header>
+
+<main class="main">
+  <section class="intro">
+    <div class="intro__title">
+      <p><span>M</span>argherita</p>
+      <p>Dall'</p>
+      <p><span class="pink">A</span>glio</p>
+    </div>
+    <div class="intro__text">
+      <p>The woman who continued where Bodoni couldn't</p>
+    </div>
+  </section>
+
+  <section class="tragedy"></section>
+
+  <section class="unthinkable"></section>
+
+  <section class="italy"></section>
+
+  <section class="righthand"></section>
+
+  <section class="shadow"></section>
+
+  <section class="uncertainty"></section>
+
+  <section class="hidden"></section>
+
+  <section class="defines"></section>
+
+  <section class="characteristics"></section>
+
+
+</main>
+
+<footer class="footer">
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="content">
 <article class="login__content">
 <div class="login__logo__container"><img class="login__logo" src="./assets/img/logo.png" alt="Logo rebel planner" width="50px" height="50px"></img></div>
