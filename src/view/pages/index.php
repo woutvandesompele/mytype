@@ -93,6 +93,12 @@
   </section>
 
   <section class="uncertainty"></section>
+    <h2 class="uncertainty__title">Bodoni's painful uncertainty</h2>
+    <p class="uncertainty__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo, felis ac volutpat bibendum, elit orci consequat risus, ac lacinia purus libero et lorem. In venenatis consequat diam eget efficitur. Nullam sed magna eget arcu ultrices pharetra quis vel velit.
+
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus tempus orci non auctor ullamcorper.
+    </p>
 
   <section class="hidden"></section>
 
