@@ -1,6 +1,6 @@
 {
   "require": {
-    "illuminate/database": "8.25.0"
+    "illuminate/database": "8.81.0"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"

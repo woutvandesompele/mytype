@@ -56,3 +56,4 @@ const initScrollTrigger = () => {
       ease: Power4.easeOut
     },
   });
+};
