@@ -1,7 +1,5 @@
 import './css/style.css';
 
-import {script} from './js/script';
-import {validate} from './js/validate';
+import {init} from './js/script';
 
-script();
-validate();
+init();
