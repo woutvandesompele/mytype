@@ -269,3 +269,63 @@ body {
   margin-top: 2rem;
   height: 30rem;
 }
+
+/* CHARACTERISTICS */
+
+.characteristics__title {
+  font-family: Bodoni;
+  font-size: 2.25rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__slanted {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.footer__text {
+  margin: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+}
+
+.footer__magazine {
+  background-color: white;
+  color: black;
+  display: flex;
+}
+
+.magazine__title {
+  font-family: Ramabhadra, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.magazine__content {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  margin-right: 2rem;
+}
+
+.footer__license {
+  font-family: Ramabhadra, sans-serif;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.footer__socials {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
