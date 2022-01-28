@@ -53,3 +53,29 @@ body {
 .main {
 
 }
+
+/* INTRO */
+
+.intro__img {
+  max-width: 100%;
+}
+
+/* TRAGEDY */
+
+.tragedy__title {
+  font-family: Bodoni;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.tragedy__title span {
+  color: var(--colorMagenta);
+}
+
+.tragedy__text {
+  margin-bottom: 2rem;
+}
+
+.tragedy__text span {
+  color: var(--colorMagenta);
+}
