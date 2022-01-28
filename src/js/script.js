@@ -24,3 +24,35 @@ const checkQuestionmark = () => {
   };
   document.querySelector('.talents__reveal').addEventListener('click', hide);
 };
+
+const initScrollTrigger = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.to('.reveal__layer1', {
+    xPercent: 25,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.reveal__layer2',
+      // start: 'top bottom', // the default values
+      // end: 'bottom top',
+      scrub: true,
+      start: 'top center',
+      end: 'center center',
+      markers: true,
+      ease: Power4.easeOut
+    },
+  });
+
+  gsap.to('.reveal__layer2', {
+    xPercent: - 25,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.reveal__layer2',
+      // start: 'top bottom', // the default values
+      // end: 'bottom top',
+      scrub: true,
+      start: 'top center',
+      end: 'center center',
+      markers: true,
+      ease: Power4.easeOut
+    },
+  });
