@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
- gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 export const init = () => {
   console.log('start');

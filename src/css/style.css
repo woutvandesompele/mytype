@@ -56,7 +56,7 @@ body {
 /* INTRO */
 
 .intro__img {
-  max-width: 100%;
+  width: 100%;
 }
 
 /* TRAGEDY */
@@ -89,8 +89,8 @@ body {
 
 .unthinkable__reveal {
   height: 672px;
-position: relative;
-width:262px;
+  position: relative;
+  width: 262px;
 }
 
 .unthinkable__reveal img {
