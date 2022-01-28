@@ -4,26 +4,6 @@ $routes = array(
   'home' => array(
     'controller' => 'Pages',
     'action' => 'index'
-  ),
-  'planner' => array(
-    'controller' => 'Pages',
-    'action' => 'planner'
-  ),
-  'detail' => array(
-    'controller' => 'Pages',
-    'action' => 'detail'
-  ),
-  'userlist' => array(
-    'controller' => 'Pages',
-    'action' => 'userlist'
-  ),
-  'logout' => array(
-    'controller' => 'Pages',
-    'action' => 'logout'
-  ),
-  'api-search' => array(
-    'controller' => 'Pages',
-    'action' => 'apiSearch'
   )
 );
 
