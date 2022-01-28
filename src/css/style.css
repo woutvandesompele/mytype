@@ -1,26 +1,30 @@
 @import './reset.css';
 @import './vars.css';
 @import './planner.css';
-@import './login.css';
-@import './userlist.css';
-@import './detail.css';
 
 @font-face {
-  font-family: UK;
-  src: url(../assets/fonts/United-Kingdom-DEMO.woff2) format('woff2');
+  font-family: Bodoni;
+  src: url(../assets/fonts/BodoniFLF-Roman.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: Mina;
-  src: url(../assets/fonts/Mina-Regular.woff2) format('woff2');
+  font-family: Raleway;
+  src: url(../assets/fonts/Raleway-ExtraLight.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Ramabhadra;
+  src: url(../assets/fonts/Ramabhadra-Regular.woff2) format('woff2');
+}
+
+@custom-selector :--content .tragedy__title, .tragedy__text, .unthinkable__title, .unthinkable__text, .shadow__text, .italy__title, .italy__text, .righthand__text, .uncertainty__content, .talents__title, .talents__text1, .talents__text2, .footer__text;
+
+:--content {
+  margin: 0 1rem;
 }
 
 html {
   box-sizing: border-box;
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  color: cyan;
 }
 
 /* stylelint-disable */
@@ -32,17 +36,20 @@ html {
 /* stylelint-enable */
 
 body {
-  background-image: url(../assets/img/background.jpeg), -webkit-linear-gradient(top, #14227d, black);
-  background-blend-mode: soft-light;
-  font-family: UK, sans-serif;
-  background-repeat: repeat;
-  background-size: 80rem;
+  font-family: Raleway, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
 }
 
-.redborder {
-  border: .2rem solid white;
+/* NAV */
+
+.header__nav {
+
+  background-color: black;
 }
 
-.error {
-  color: white;
+/* main */
+
+.main {
+
 }
