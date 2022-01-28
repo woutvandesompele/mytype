@@ -121,7 +121,40 @@
     </p>
   </section>
 
-
+  <section class="characteristics">
+    <div class="container">
+      <div class="img-container">
+        <svg
+          height="100%"
+          width="100%"
+          version="1.1"
+              >
+          <image
+            preserveAspectRatio="none"
+            href="./assets/img/characteristics.svg"
+            id=""
+          />
+          <path
+                class="path"
+            id="one"
+                data-placement="top" data-desc="Ekran"
+            d="M 109.75136,208.98078 376.92387,384.13952 588.6664,207.87218 317.05949,51.559639 Z" />
+          <path
+            class="path"
+            id="two"
+                data-toggle="tooltip" data-placement="top" data-desc="Joystick"
+            d="m 555.39195,357.06568 24.6928,16.06991 h 8.62288 l 23.9089,-20.38135 0.78389,-6.27119 -21.16525,-15.28602 -7.05508,-1.56779 -7.44704,0.78389 -21.5572,18.02967 z" />
+          <path
+              class="path"
+            id="three"
+                data-toggle="tooltip" data-placement="top" data-desc="Jakiś tam knefel"
+            d="m 768.81383,551.53807 12.1946,7.20589 10.5317,6.37445 9.97739,8.8688 9.14595,4.4344 -55.42998,48.22408 -14.68895,6.92875 -8.03734,1.38575 -11.6403,-1.6629 -17.73759,-9.70025 -11.6403,-9.14595 11.91745,-8.86879 36.30663,-29.65504 24.66635,-21.0634 z"/>
+        </svg>
+      </div>
+      <div class="desc-container">
+      </div>
+    </div>
+  </section>
 
   <section class="end">
     <p>Thanks to</p>
