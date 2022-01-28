@@ -82,15 +82,21 @@ body {
 
 /* UNTHINKABLE */
 
+.reveal__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .unthinkable__reveal {
   height: 672px;
-  overflow: talents;
+position: relative;
+width:262px;
 }
 
 .unthinkable__reveal img {
   position: absolute;
   height: 25rem;
-  overflow: talents;
+display: block;
 }
 
 .unthinkable__title {

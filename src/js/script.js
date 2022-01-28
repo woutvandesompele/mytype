@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-
+ gsap.registerPlugin(ScrollTrigger);
 
 export const init = () => {
   console.log('start');
@@ -26,7 +26,7 @@ const checkQuestionmark = () => {
 };
 
 const initScrollTrigger = () => {
-  gsap.registerPlugin(ScrollTrigger);
+
   gsap.to('.reveal__layer1', {
     xPercent: 25,
     ease: 'none',

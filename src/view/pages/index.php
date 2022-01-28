@@ -31,10 +31,12 @@
   </section>
 
 <section class="unthinkable">
-    <div class="unthinkable__reveal">
-      <img class="reveal__margherita" src="./assets/img/margherita.png"></img>
-      <img class="reveal__layer1" src="./assets/img/layer1.png"></img>
-      <img class="reveal__layer2" src="./assets/img/layer2.png"></img>
+    <div class="reveal__wrapper">
+      <div class="unthinkable__reveal">
+        <img class="reveal__margherita" src="./assets/img/margherita.png"></img>
+        <img class="reveal__layer1" src="./assets/img/layer1.png"></img>
+        <img class="reveal__layer2" src="./assets/img/layer2.png"></img>
+      </div>
     </div>
     <h2 class="unthinkable__title"><?php echo $unthinkable_title ?></h2>
     <div class="unthinkable__text">
@@ -133,11 +135,11 @@
             href="./assets/img/characteristics.svg"
             id=""
           />
-          <circle cx="634" cy="162" r="19.5" stroke="#F8169D" stroke-width="3"/>
-          <circle cx="799.5" cy="142.5" r="25" stroke="#F8169D" stroke-width="3"/>
-          <circle cx="122.5" cy="73.5" r="20" stroke="#F8169D" stroke-width="3"/>
-          <rect x="421" y="152" width="94" height="14" stroke="#F8169D" stroke-width="2"/>
-          <rect x="993" y="113" width="104" height="14" transform="rotate(90 993 113)" stroke="#F8169D" stroke-width="2"/>
+          <circle cx="634" cy="162" r="19.5" stroke="#F8169D" stroke-width="3" fill="none"/>
+          <circle cx="799.5" cy="142.5" r="25" stroke="#F8169D" stroke-width="3" fill="none"/>
+          <circle cx="122.5" cy="73.5" r="20" stroke="#F8169D" stroke-width="3" fill="none"/>
+          <rect x="421" y="152" width="94" height="14" stroke="#F8169D" stroke-width="2" fill="none"/>
+          <rect x="993" y="113" width="104" height="14" transform="rotate(90 993 113)" stroke="#F8169D" stroke-width="2" fill="none"/>
           <path
             class="path"
             id="two"
