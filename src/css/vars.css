@@ -13,7 +13,7 @@
   --fontBig: 1.75rem; /* 28px */
   --fontWeightRegular: 400;
   --fontWeightBold: 500;
-  --colorCyan: rgb(0, 253, 253);
-  --fontTitle: 'UK', sans-serif;
-  --fontBody: 'Mina', sans-serif;
+  --colorMagenta: #f8169d;
+  --fontTitle: 'Bodoni', sans-serif;
+  --fontBody: 'Raleway', sans-serif;
 }
