@@ -79,3 +79,89 @@ body {
 .tragedy__text span {
   color: var(--colorMagenta);
 }
+
+/* UNTHINKABLE */
+
+.unthinkable__reveal {
+  height: 672px;
+  overflow: talents;
+}
+
+.unthinkable__reveal img {
+  position: absolute;
+  height: 25rem;
+  overflow: talents;
+}
+
+.unthinkable__title {
+  font-family: Bodoni;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.unthinkable__title span {
+  color: var(--colorMagenta);
+}
+
+/* ITALY */
+
+.black {
+  background-color: black;
+  color: white;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.italy {
+  background-image: url(../assets/img/italy_background.png);
+  background-repeat: no-repeat;
+
+}
+
+.italy__title {
+  font-family: Bodoni;
+  font-size: 2.25rem;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.italy__title span {
+  color: var(--colorMagenta);
+}
+
+/* RIGHT HAND */
+
+.title__B {
+  margin-left: -4rem;
+  float: left;
+  shape-outside: url(../assets/img/B.svg);
+  shape-margin: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.title__words {
+  margin: 5rem 0 10rem;
+}
+
+.righthand__title {
+  font-family: Bodoni;
+  font-size: 2.25rem;
+}
+
+.righthand__B {
+  font-size: 15rem;
+  margin-left: -3rem;
+}
+/* SHADOW */
+
+.shadow__title--wrapper {
+  display: flex;
+}
+
+.shadow__title {
+  margin: 0 auto;
+  max-width: 100%;
+}
