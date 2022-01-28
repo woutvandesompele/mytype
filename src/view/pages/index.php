@@ -61,7 +61,6 @@
     <div class="righthand__title">
       <img src="./assets/img/B.svg" alt="B" class="title__B">
       <div class="title__words">
-        <br><br>
         <h2><span>odoni</span>'s</h2>
         <h2>right</h2>
         <h2>hand</h2>
@@ -134,11 +133,11 @@
             href="./assets/img/characteristics.svg"
             id=""
           />
-          <path
-                class="path"
-            id="one"
-                data-placement="top" data-desc="Ekran"
-            d="M 109.75136,208.98078 376.92387,384.13952 588.6664,207.87218 317.05949,51.559639 Z" />
+          <circle cx="634" cy="162" r="19.5" stroke="#F8169D" stroke-width="3"/>
+          <circle cx="799.5" cy="142.5" r="25" stroke="#F8169D" stroke-width="3"/>
+          <circle cx="122.5" cy="73.5" r="20" stroke="#F8169D" stroke-width="3"/>
+          <rect x="421" y="152" width="94" height="14" stroke="#F8169D" stroke-width="2"/>
+          <rect x="993" y="113" width="104" height="14" transform="rotate(90 993 113)" stroke="#F8169D" stroke-width="2"/>
           <path
             class="path"
             id="two"

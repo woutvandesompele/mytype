@@ -65,6 +65,7 @@ body {
   font-family: Bodoni;
   font-size: 2.25rem;
   margin-bottom: 1rem;
+  line-height: 2rem;
 }
 
 .tragedy__title span {
@@ -327,4 +328,10 @@ body {
   margin: 5rem 0;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 670px) {
+  .tragedy__title--span {
+    display: none;
+  }
 }
