@@ -49,10 +49,6 @@ body {
 
 /* main */
 
-.main {
-
-}
-
 /* INTRO */
 
 .intro__img {
@@ -96,7 +92,7 @@ body {
 .unthinkable__reveal img {
   position: absolute;
   height: 25rem;
-display: block;
+  display: block;
 }
 
 .unthinkable__title {
@@ -231,9 +227,8 @@ display: block;
   text-align: center;
 }
 
-
 .uncertainty__text::before {
-  content: "";
+  content: '';
   width: 50%;
   height: 100%;
   float: left;
@@ -242,7 +237,7 @@ display: block;
 }
 
 .uncertainty__text p::before {
-  content: "";
+  content: '';
   width: 50%;
   height: 100%;
   float: right;
@@ -271,16 +266,85 @@ display: block;
   margin: 0 auto;
 }
 
+/* CHARACTERISTICS */
+
 .img-container {
   margin-top: 2rem;
   height: 30rem;
 }
 
-/* CHARACTERISTICS */
-
 .characteristics__title {
   font-family: Bodoni;
   font-size: 2.25rem;
+}
+
+.scroller {
+  min-width: 70rem;
+  height: 20rem;
+}
+
+.characteristics__characteristics {
+  min-width: 70rem;
+  height: 20rem;
+}
+
+path {
+  fill: transparent;
+  transition: 1s;
+  stroke: transparent;
+  stroke-width: 2px;
+  opacity: 1;
+}
+
+circle {
+  fill: transparent;
+  transition: 1s;
+  stroke: transparent;
+  stroke-width: 2px;
+  opacity: 1;
+}
+
+rect {
+  fill: transparent;
+  transition: 1s;
+  stroke: transparent;
+  stroke-width: 2px;
+  opacity: 1;
+}
+
+#one:hover {
+  stroke: white;
+}
+
+#two:hover {
+  fill: blue;
+  stroke: yellow;
+}
+
+#three:hover {
+  fill: grey;
+  opacity: .5;
+}
+
+.hover1 {
+  fill: black;
+}
+
+.hover2 {
+  fill: black;
+}
+
+.hover3 {
+  fill: black;
+  display: block;
+}
+
+.hover4 {
+  fill: black;
+}
+
+.hover5 {
+  fill: black;
 }
 
 /* FOOTER */
@@ -290,6 +354,7 @@ display: block;
   color: white;
   display: flex;
   flex-direction: column;
+  margin-top: 100rem;
 }
 
 .footer__slanted {
@@ -337,6 +402,7 @@ display: block;
 }
 
 @media only screen and (min-width: 670px) {
+
   .tragedy__title--span {
     display: none;
   }
