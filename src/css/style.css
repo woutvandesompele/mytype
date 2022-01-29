@@ -16,7 +16,7 @@
   src: url(../assets/fonts/Ramabhadra-Regular.woff2) format('woff2');
 }
 
-@custom-selector :--content .tragedy__title, .tragedy__text, .unthinkable__title, .unthinkable__text, .shadow__text, .italy__title, .italy__text, .righthand__text, .uncertainty__content, .talents__title, .talents__text1, .talents__text2, .footer__text;
+@custom-selector :--content .tragedy__title, .tragedy__text, .unthinkable__title, .unthinkable__text, .shadow__text, .italy__title, .italy__text, .righthand__text, .talents__title, .talents__text1, .talents__text2, .footer__text;
 
 :--content {
   margin: 0 1rem;
@@ -43,7 +43,6 @@ body {
 /* NAV */
 
 .header__nav {
-
   background-color: black;
 }
 
@@ -95,6 +94,10 @@ body {
   display: block;
 }
 
+.unthinkable__text p {
+  margin-bottom: 4rem;
+}
+
 .unthinkable__title {
   font-family: Bodoni;
   font-size: 2.25rem;
@@ -117,26 +120,36 @@ body {
 }
 
 .italy {
-  background-image: url(../assets/img/italy_background.png);
+  background-image: url(../assets/img/italy_background.svg);
   background-repeat: no-repeat;
-
+  background-position: center;
+  background-position-y: 15rem;
 }
 
 .italy__title {
   font-family: Bodoni;
   font-size: 2.25rem;
-  padding-top: 2rem;
-  margin-bottom: 1rem;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .italy__title span {
   color: var(--colorMagenta);
 }
 
+.italy__p {
+  margin-bottom: 1rem;
+}
+
 /* RIGHT HAND */
 
+.righthand {
+  background-image: url(../assets/img/grid_mobile.svg);
+
+}
+
 .title__B {
-  margin-left: -4rem;
+  margin-left: -2rem;
   float: left;
   shape-outside: url(../assets/img/B.svg);
   shape-margin: 20px;
@@ -145,12 +158,13 @@ body {
 }
 
 .title__words {
-  margin: 5rem 0 10rem;
+  margin: 5rem 0 8rem;
 }
 
 .righthand__title {
   font-family: Bodoni;
   font-size: 2.25rem;
+  padding-top: 5rem;
 }
 
 .righthand__B {
@@ -189,7 +203,7 @@ body {
 } */
 
 .uncertainty {
-  display: none;
+  min-height: 80rem;
 }
 
 .uncertainty__content {
@@ -204,23 +218,16 @@ body {
 .uncertainty__title {
   font-family: Bodoni;
   font-size: 2.25rem;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .uncertainty__text {
-  justify-content: center;
-  width: 200%;
-  height: 200%;
-  background-image: url(../assets/img/Q.svg);
-  background-size: 110%;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 50rem;
-  position: relative;
-  margin: 0;
-  color: black;
+  margin: 0 1rem;
 }
-
+/*
 .uncertainty__text p {
+  margin-left: 7rem;
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -243,7 +250,7 @@ body {
   float: right;
   shape-outside: url(../assets/img/Q_right.svg);
   shape-margin: 10%;
-}
+}*/
 
 /* HIDDEN TALENTS */
 
@@ -401,9 +408,239 @@ rect {
   justify-content: space-evenly;
 }
 
-@media only screen and (min-width: 670px) {
+@media only screen and (min-width: 375px) {
+
+  .uncertainty__text {
+    justify-content: center;
+    width: 150vw;
+    margin-left: -6rem;
+    background-image: url(../assets/img/Q.svg);
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60rem;
+    position: relative;
+  }
+
+  .uncertainty__text p {
+    margin-top: 5rem;
+    margin-left: 8rem;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .uncertainty__text::before {
+    margin-top: 5rem;
+    content: '';
+    width: 50%;
+    height: 100%;
+    float: left;
+    shape-outside: url(../assets/img/Q_left.svg);
+    shape-margin: 5%;
+  }
+
+  .uncertainty__text p::before {
+    margin-top: -2rem;
+    margin-right: 4rem;
+    content: '';
+    width: 50%;
+    height: 100%;
+    float: right;
+    shape-outside: url(../assets/img/Q_right.svg);
+    shape-margin: 10%;
+  }
+
+  .italy {
+    background-image: url(../assets/img/italy_background.svg);
+    background-repeat: no-repeat;
+    background-position-y: 15rem;
+  }
+
+}
+
+@media only screen and (min-width: 400px) {
+
+  .italy {
+    background-position-y: 10rem;
+  }
+
+}
+
+@media only screen and (min-width: 425px) {
+
+  .uncertainty__text {
+    margin-left: -4rem;
+    min-height: 70rem;
+    width: 130vw;
+  }
+
+  .uncertainty__text p {
+    margin-top: 12rem;
+    margin-left: 8rem;
+  }
+
+  .uncertainty__text::before {
+    margin-top: 9rem;
+  }
+
+  .uncertainty__text p::before {
+    margin-top: 0rem;
+  }
+
+  .italy__text {
+    margin: 0 2rem;
+  }
+
+  .righthand__text {
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+
+  .italy {
+    background-position-y: 6rem;
+  }
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  .italy {
+    background-position-y: 4rem;
+  }
+
+  .uncertainty__text {
+    margin-left: 0rem;
+    min-height: 70rem;
+    width: 100vw;
+  }
+
+  .uncertainty__text p {
+    margin-top: 12rem;
+    margin-left: 9rem;
+  }
+
+  .uncertainty__text::before {
+    margin-top: 9rem;
+  }
+
+  .uncertainty__text p::before {
+    margin-top: 0rem;
+  }
+
+}
+
+@media only screen and (min-width: 700px) {
+
+  .italy {
+    background-position-y: 0rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .italy {
+    background-image: url(../assets/img/italy_background_desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: -10rem;
+  }
+
+  .italy__text {
+    height: 80rem;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.4fr repeat(2, 0.8fr);
+    gap: 0px 20px;
+    grid-template-areas:
+      "italy__p1 italy__p1"
+      "italy__p2 ."
+      "italy__p3 italy__p3";
+  }
+  .italy__p1 { grid-area: italy__p1; }
+  .italy__p2 { grid-area: italy__p2; }
+  .italy__p3 { grid-area: italy__p3; }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+  .italy__text {
+    height: 65rem;
+    grid-template-columns: 1.1fr .9fr;
+    grid-template-rows: .6fr 1.8fr .6fr;
+    grid-template-areas:
+      "italy__p1 italy__p1"
+      ". italy__p2"
+      "italy__p3 .";
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .italy__text {
+    height: 70rem;
+  }
+
+  :--content {
+    margin: 0 5rem;
+  }
+
+  .unthinkable {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10rem;
+  }
+
+  .reveal__wrapper {
+    margin: 3rem;
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .italy__text {
+    grid-template-areas:
+      "italy__p1 italy__p1"
+      ". italy__p2"
+      "italy__p3 italy__p3";
+  }
 
   .tragedy__title--span {
     display: none;
   }
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+  .italy__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .italy__content {
+    margin-left: 40rem;
+  }
+
+  .italy__p2 {
+    margin-left: -5rem;
+  }
+
+  .italy__p3 {
+    margin-left: 5rem;
+  }
+
+  .tragedy__title--span {
+    display: none;
+  }
+
 }

@@ -5,7 +5,12 @@
 <main class="main">
   <section class="intro">
     <div class="intro__title">
-      <img class="intro__img" src="./assets/img/header_mobile.svg"></img>
+      <picture class="intro__img">
+        <source sizes="(min-width: 100px) 100vw, 100vw" srcset="./assets/img/header_mobile.svg 100w,
+        ./assets/img/header_desktop.svg 1050w"
+        type="image/svg+xml" />
+        <img class="intro__img" src="./assets/img/header_desktop.jpg"></img>
+      </picture>
     </div>
   </section>
 
@@ -38,24 +43,28 @@
         <img class="reveal__layer2" src="./assets/img/layer2.png"></img>
       </div>
     </div>
-    <h2 class="unthinkable__title"><?php echo $unthinkable_title ?></h2>
-    <div class="unthinkable__text">
-      <p>
-        <?php
-          echo $unthinkable;
-        ?>
-      </p>
+    <div class="unthinkable__content">
+      <h2 class="unthinkable__title"><?php echo $unthinkable_title ?></h2>
+      <div class="unthinkable__text">
+        <p>
+          <?php
+            echo $unthinkable;
+          ?>
+        </p>
+      </div>
     </div>
   </section>
 
   <div class="black">
   <section class="italy">
-    <h2 class="italy__title"><?php echo $italy_title ?></h2>
-    <p class="italy__text">
-        <?php
-          echo $italy;
-        ?>
-    </p>
+    <div class="italy__content">
+      <h2 class="italy__title"><?php echo $italy_title ?></h2>
+      <div class="italy__text">
+        <p class="italy__p1 italy__p"><?php echo $italy1;?></p>
+        <p class="italy__p2 italy__p"><?php echo $italy2;?></p>
+        <p class="italy__p3 italy__p"><?php echo $italy3;?></p>
+      </div>
+    </div>
   </section>
 
 

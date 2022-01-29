@@ -6,7 +6,9 @@ export const init = () => {
   gsap.registerPlugin(ScrollTrigger);
   initScrollTrigger();
   checkQuestionmark();
-  checkHover();
+  characterHover();
+  // tipoHover();
+  dieHover();
 };
 
 const checkQuestionmark = () => {
@@ -26,7 +28,7 @@ const checkQuestionmark = () => {
   document.querySelector('.talents__reveal').addEventListener('click', hide);
 };
 
-const checkHover = () => {
+const characterHover = () => {
   const imageContainer = document.querySelector('.img-container');
   const paths = imageContainer.querySelectorAll('.path');
   const desc = document.querySelector('.desc-container');
@@ -38,8 +40,33 @@ const checkHover = () => {
       desc.innerHTML = '';
     }, false);
   });
-
 };
+
+/*
+const tipoHover = () => {
+  const imageContainer = document.querySelector('.img-container');
+  const paths = imageContainer.querySelectorAll('.path');
+  const desc = document.querySelector('.desc-container');
+  paths.forEach(el => {
+    el.addEventListener('mouseover', e => {
+      desc.innerHTML = e.target.dataset.desc;
+    }, false);
+    el.addEventListener('mouseout', () => {
+      desc.innerHTML = '';
+    }, false);
+  });
+};
+*/
+
+const dieHover = () => {
+  const body = document.body;
+  const span = document.querySelector(".died"),
+    hover = gsap.to(body, {backgroundColor: "black", paused: true, duration: 0.3});
+  span.addEventListener("mouseenter", () => {hover.play();});
+  span.addEventListener("mouseleave", () => {hover.reverse();});
+};
+
+
 
 const initScrollTrigger = () => {
   gsap.to('.reveal__layer1', {
