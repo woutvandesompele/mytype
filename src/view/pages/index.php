@@ -73,7 +73,7 @@
       <img src="./assets/img/B.svg" alt="B" class="title__B">
       <div class="title__words">
         <h2><span>odoni</span>'s</h2>
-        <h2>right</h2>
+        <h2 class="title__words--right">right</h2>
         <h2>hand</h2>
       </div>
     </div>
