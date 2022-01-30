@@ -110,21 +110,50 @@
     </div>
   </section>
 
-  <section class="talents">
-    <h2 class="talents__title"><?php echo $talents_title ?></h2>
-    <div class="talents__reveal">
-      <div class="questionmark__wrapper"><img class="talents__questionmark" src="./assets/img/questionmark.svg"></img></div>
-      <div class="talents__questionmarks"><div class="questionmarks__grid"></div></div>
-      <div class="talents__content">
-        <div  class="talents__text1">
+  <section class="talents--mobile">
+    <h2 class="talents__title--mobile"><?php echo $talents_title ?></h2>
+    <div class="talents__reveal--mobile">
+      <div class="questionmark__wrapper--mobile"><img class="talents__questionmark--mobile" src="./assets/img/questionmark.svg"></img></div>
+      <div class="talents__content--mobile">
+        <div  class="talents__text1--mobile">
           <?php echo $talents1 ?>
         </div>
-        <div  class="talents__text2">
+        <div  class="talents__text2--mobile">
           <?php echo $talents2 ?>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="talents--desktop">
+    <h2 class="talents__title--desktop"><?php echo $talents_title ?></h2>
+    <div class="talents__grid__wrapper--desktop">
+      <div class="talents__grid--desktop">
+        <?php for ($i = 0; $i <= 11; $i++): ?>
+            <div class="grid__questionmark--desktop">
+              <img src="./assets/img/questup.svg">
+              <img class="img-top" src="./assets/img/questup-pink.svg">
+            </div>
+            <div class="grid__questionmark--desktop">
+              <img src="./assets/img/questdown.svg">
+              <img class="img-top" src="./assets/img/questdown-pink.svg">
+            </div>
+          <?php endfor;?>
+        }
+        ?>
+      </div>
+      <div class="talents__content--desktop">
+        <div  class="talents__text1--desktop">
+          <?php echo $talents1 ?>
+        </div>
+        <div  class="talents__text2--desktop">
+          <?php echo $talents2 ?>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="talents__questionmarks"><div class="questionmarks__grid"></div></div>
 
   <section class="defines">
 

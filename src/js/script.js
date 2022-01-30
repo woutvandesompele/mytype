@@ -14,8 +14,8 @@ export const init = () => {
 const checkQuestionmark = () => {
 
   const hide = () => {
-    const questionmark = document.querySelector('.questionmark__wrapper');
-    const content = document.querySelector('.talents__content');
+    const questionmark = document.querySelector('.questionmark__wrapper--mobile');
+    const content = document.querySelector('.talents__content--mobile');
     if (questionmark.style.display === 'none') {
       questionmark.style.display = 'block';
       content.style.display = 'none';
@@ -25,7 +25,7 @@ const checkQuestionmark = () => {
     }
 
   };
-  document.querySelector('.talents__reveal').addEventListener('click', hide);
+  document.querySelector('.talents__reveal--mobile').addEventListener('click', hide);
 };
 
 const characterHover = () => {

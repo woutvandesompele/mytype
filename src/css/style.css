@@ -272,26 +272,30 @@ body {
 
 /* HIDDEN TALENTS */
 
-.talents__title {
+.talents__title--mobile {
   margin-top: 10rem;
   font-family: Bodoni;
   font-size: 2.25rem;
   margin-bottom: 1rem;
 }
 
-.talents__text1 {
+.talents__text1--mobile {
   margin-bottom: 1rem;
 }
 
-.questionmark__wrapper {
+.questionmark__wrapper--mobile {
   display: flex;
 }
 
-.talents__questionmark {
+.talents__questionmark--mobile {
   margin: 0 auto;
 }
 
-.talents__content {
+.talents__content--mobile {
+  display: none;
+}
+
+.talents--desktop {
   display: none;
 }
 
@@ -668,6 +672,8 @@ rect {
     margin-top: -15vw;
   }
 
+
+
 }
 
 @media only screen and (min-width: 900px) {
@@ -815,6 +821,51 @@ rect {
 
   .title__words h2 {
     margin-bottom: 5rem;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .talents__mobile {
+    display: none;
+  }
+
+  .talents--desktop {
+    display: block;
+    background-image: url(../assets/img/talents_grid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 1426px;
+  }
+
+  .talents__title--desktop {
+    display: none;
+  }
+
+  .talents__grid--desktop {
+    width: 1426px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(8, 1fr);
+    row-gap: 120px;
+    column-gap: 71px;
+  }
+
+  .grid__questionmark--desktop {
+    position: relative;
+    display: inline-block;
+  }
+
+  .grid__questionmark--desktop .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  .grid__questionmark--desktop:hover .img-top {
+    display: inline;
   }
 
 }
