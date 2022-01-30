@@ -6,9 +6,12 @@
   <section class="intro">
     <div class="intro__title">
       <picture class="intro__img">
-        <source sizes="(min-width: 100px) 100vw, 100vw" srcset="./assets/img/header_mobile.svg 100w,
-        ./assets/img/header_desktop.svg 1050w"
-        type="image/svg+xml" />
+        <source
+          sizes="(min-width: 1500px) 100vw,
+                 (min-width: 320px) 50vw"
+          srcset="./assets/img/header_mobile.svg 100w,
+                  ./assets/img/header_desktop.svg 1050w"
+          type="image/svg+xml" />
         <img class="intro__img" src="./assets/img/header_desktop.jpg"></img>
       </picture>
     </div>
@@ -111,6 +114,7 @@
     <h2 class="talents__title"><?php echo $talents_title ?></h2>
     <div class="talents__reveal">
       <div class="questionmark__wrapper"><img class="talents__questionmark" src="./assets/img/questionmark.svg"></img></div>
+      <div class="talents__questionmarks"><div class="questionmarks__grid"></div></div>
       <div class="talents__content">
         <div  class="talents__text1">
           <?php echo $talents1 ?>
@@ -123,7 +127,36 @@
   </section>
 
   <section class="defines">
-    <img class="defines__title" src="./assets/img/defines_mobile.svg"></img>
+
+
+
+
+      <!--<picture class="defines__title">
+        <source
+          sizes="(min-width: 1500px) 100vw,
+                 (min-width: 320px) 50vw"
+          srcset="./assets/img/defines_mobile.svg 300w,
+                  ./assets/img/defines_desktop.svg 1050w"
+          type="image/svg+xml" />
+        <img class="defines__title"
+             src="./assets/img/defines_desktop.jpg"></img>
+      </picture>-->
+
+      <picture class="defines__title">
+        <source
+            media="(min-width: 768px)"
+            srcset="./assets/img/defines_desktop.svg"
+            type="image/svg+xml">
+          <source
+            media="(min-width: 300px)"
+            srcset="./assets/img/defines_mobile.svg"
+            type="image/svg+xml">
+          <img class="defines__title" src="./assets/img/defines_desktop.jpg"></img>
+      </picture>
+
+
+
+
     <p class="defines__intro">
         <?php
           echo $defines;

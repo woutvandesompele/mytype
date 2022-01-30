@@ -297,6 +297,10 @@ body {
 
 /* CHARACTERISTICS */
 
+.defines__title {
+  width: 100vw;
+}
+
 .img-container {
   margin-top: 2rem;
   height: 30rem;
@@ -587,6 +591,11 @@ rect {
     font-size: 3rem;
   }
 
+  .defines__intro {
+    margin-left: 30vw;
+    margin-top: -25vw;
+  }
+
 }
 
 @media only screen and (min-width: 700px) {
@@ -645,6 +654,18 @@ rect {
   .shadow__title {
     margin: 0;
     margin-left: 5vw;
+  }
+
+  .defines__title {
+    width: 150vw;
+    margin-left: -50%;
+    transform: translateX(50%);
+  }
+
+  .defines__intro {
+    margin-left: 25vw;
+    margin-right: 20vw;
+    margin-top: -15vw;
   }
 
 }
@@ -736,6 +757,18 @@ rect {
 
   .righthand {
     background-size: 220%;
+  }
+
+  .defines__title {
+    width: 100vw;
+    margin-left: 0%;
+    transform: translateX(0%);
+  }
+
+  .defines__intro {
+    margin-left: 35vw;
+    margin-right: 30vw;
+    margin-top: -10vw;
   }
 
 }
