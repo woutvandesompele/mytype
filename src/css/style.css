@@ -291,6 +291,10 @@ body {
   margin: 0 auto;
 }
 
+.talents__content {
+  display: none;
+}
+
 /* CHARACTERISTICS */
 
 .img-container {

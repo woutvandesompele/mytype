@@ -113,10 +113,10 @@
       <div class="questionmark__wrapper"><img class="talents__questionmark" src="./assets/img/questionmark.svg"></img></div>
       <div class="talents__content">
         <div  class="talents__text1">
-          Passionate about music, she was elected a regular member of the Ducal Parmens Philharmonic Society on April 2, 1825.
+          <?php echo $talents1 ?>
         </div>
         <div  class="talents__text2">
-          She became member of Accademia degli Unanimi , of which she was made an honorary member on 26/12/1796, with the name "L'Eccelsa."
+          <?php echo $talents2 ?>
         </div>
       </div>
     </div>
