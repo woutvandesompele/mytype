@@ -338,6 +338,7 @@ a {
   height: 20rem;
 }
 
+
 .characteristics__characteristics {
   min-width: 70rem;
   height: 20rem;
@@ -356,7 +357,6 @@ circle {
   transition: 1s;
   stroke: transparent;
   stroke-width: 2px;
-  opacity: 1;
 }
 
 rect {
@@ -367,25 +367,42 @@ rect {
   opacity: 1;
 }
 
-.hover1 {
-  fill: black;
+.hover1:hover {
+  fill: var(--colorMagenta);
+  opacity: .2;
 }
 
-.hover2 {
-  fill: black;
+.hover2:hover {
+  fill: var(--colorMagenta);
+  opacity: .2;
 }
 
-.hover3 {
-  fill: black;
-  display: block;
+.hover3:hover {
+  fill: var(--colorMagenta);
+  opacity: .2;
 }
 
-.hover4 {
-  fill: black;
+.hover4:hover {
+  fill: var(--colorMagenta);
+  opacity: .2;
 }
 
-.hover5 {
-  fill: black;
+.hover5:hover {
+  fill: var(--colorMagenta);
+  opacity: .2;
+}
+
+.desc-container--wrapper {
+  margin-top: -3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.desc-container {
+  font-size: 2rem;
+  font-family: Bodoni, serif;
+  margin: 0 auto;
 }
 
 /* FOOTER */
@@ -909,6 +926,11 @@ rect {
     margin-bottom: 2.25rem;
   }
 
+
+  .characteristics__characteristics {
+    margin-left: 5rem;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -998,6 +1020,10 @@ rect {
 
   .title__words h2 {
     margin-bottom: 5rem;
+  }
+
+  .characteristics__characteristics {
+    margin-left: 10rem;
   }
 
 }

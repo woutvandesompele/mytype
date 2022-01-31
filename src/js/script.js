@@ -146,21 +146,27 @@ const initScrollTrigger = () => {
 
 
 
-ScrollTrigger.matchMedia ()
+  ScrollTrigger.matchMedia ({
 
-  const svg = document.querySelector('.characteristics__characteristics');
-  const imgContainer = document.querySelector('.img-container');
-  gsap.to(svg, {
-    xPercent: - imgContainer.offsetWidth,
-    ease: 'none',
-    scrollTrigger: {
-      trigger: '.img-container',
-      pin: true,
-      start: 'top center',
-      scrub: 1,
-      end: () => `+=${ (imgContainer.offsetWidth - innerWidth) * 10}`
+    "(max-width: 1000px)": function() {
+      const svg = document.querySelector('.characteristics__characteristics');
+      const imgContainer = document.querySelector('.img-container');
+      gsap.to(svg, {
+        xPercent: - imgContainer.offsetWidth,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.img-container',
+          pin: true,
+          start: 'top center',
+          scrub: 1,
+          end: () => `+=${ (imgContainer.offsetWidth - innerWidth) * 10}`
+        }
+      });
     }
-  });
+
+  })
+
+
 
   /*
   gsap.set('.scroller', {
