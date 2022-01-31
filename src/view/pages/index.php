@@ -88,27 +88,32 @@
   </section>
   </div>
 
-  <section class="shadow">
-    <div class="shadow__title--wrapper"><img src="./assets/img/shadow.svg" alt="In the shadow of her man" class="shadow__title"></div>
-    <p class="shadow__text">
-        <?php
-          echo $shadow;
-        ?>
-    </p>
-  </section>
+<div class="uncertainty-shadow__wrapper">
+    <section class="shadow">
+      <div class="shadow__title--wrapper"><img src="./assets/img/shadow.svg" alt="In the shadow of her man" class="shadow__title"></div>
+      <p class="shadow__text">
+          <?php
+            echo $shadow;
+          ?>
+      </p>
+    </section>
 
-  <section class="uncertainty">
-    <div class="uncertainty__content">
-      <h2 class="uncertainty__title"><?php echo $uncertainty_title ?></h2>
-        <div class="uncertainty__text">
-          <p>
-            <?php
-              echo $uncertainty;
-            ?>
-          </p>
-        </div>
-    </div>
-  </section>
+    <section class="uncertainty">
+      <div class="uncertainty__content">
+        <h2 class="uncertainty__title"><?php echo $uncertainty_title ?></h2>
+          <div class="uncertainty__text--mobile">
+            <p>
+              <?php
+                echo $uncertainty;
+              ?>
+            </p>
+          </div>
+          <div class="uncertainty__text--desktop">
+            <img src="./assets/img/Q_text.svg" alt="uncertainty of Bodoni" class="uncertainty__Q">
+          </div>
+      </div>
+    </section>
+</div>
 
   <section class="talents--mobile">
     <h2 class="talents__title--mobile"><?php echo $talents_title ?></h2>
