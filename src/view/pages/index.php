@@ -126,10 +126,20 @@
   </section>
 
   <section class="talents--desktop">
-    <h2 class="talents__title--desktop"><?php echo $talents_title ?></h2>
     <div class="talents__grid__wrapper--desktop">
       <div class="talents__grid--desktop">
-        <?php for ($i = 0; $i <= 11; $i++): ?>
+        <div class="grid__questionmark--desktop">
+          <img src="./assets/img/questup.svg">
+          <img class="img-top" src="./assets/img/questup-pink.svg">
+        </div>
+        <div class="grid__questionmark--desktop">
+          <img src="./assets/img/questdown.svg">
+          <img class="img-top" src="./assets/img/questdown-pink.svg">
+        </div>
+        <div class="talents__title--desktop">
+          <h2 class="talents__title--desktop"><?php echo $talents_title ?></h2>
+        </div>
+        <?php for ($i = 0; $i <= 3; $i++): ?>
             <div class="grid__questionmark--desktop">
               <img src="./assets/img/questup.svg">
               <img class="img-top" src="./assets/img/questup-pink.svg">
@@ -138,16 +148,32 @@
               <img src="./assets/img/questdown.svg">
               <img class="img-top" src="./assets/img/questdown-pink.svg">
             </div>
-          <?php endfor;?>
-        }
-        ?>
-      </div>
-      <div class="talents__content--desktop">
-        <div  class="talents__text1--desktop">
-          <?php echo $talents1 ?>
+        <?php endfor;?>
+        <div class="grid__questionmark--desktop">
+          <img class="dissapear" src="./assets/img/questup.svg">
+          <p class="img-top talents__text--desktop"><?php echo $talents1 ?></p>
         </div>
-        <div  class="talents__text2--desktop">
-          <?php echo $talents2 ?>
+        <?php for ($i = 0; $i <= 3; $i++): ?>
+            <div class="grid__questionmark--desktop">
+              <img src="./assets/img/questdown.svg">
+              <img class="img-top" src="./assets/img/questdown-pink.svg">
+            </div>
+            <div class="grid__questionmark--desktop">
+              <img src="./assets/img/questup.svg">
+              <img class="img-top" src="./assets/img/questup-pink.svg">
+            </div>
+        <?php endfor;?>
+        <div class="grid__questionmark--desktop">
+          <img src="./assets/img/questdown.svg">
+          <p class="img-top text__talents2 talents__text--desktop"><?php echo $talents2 ?></p>
+        </div>
+        <div class="grid__questionmark--desktop">
+          <img src="./assets/img/questup.svg">
+          <img class="img-top" src="./assets/img/questup-pink.svg">
+        </div>
+        <div class="grid__questionmark--desktop">
+          <img src="./assets/img/questdown.svg">
+          <img class="img-top" src="./assets/img/questdown-pink.svg">
         </div>
       </div>
     </div>
