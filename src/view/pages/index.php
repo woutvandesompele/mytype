@@ -243,12 +243,7 @@
           />
         </svg>
       </div>
-      <div class="desc-container--wrapper">
-        <div class="desc-container">
-        </div>
-      </div>
     </div>
-
 
 
     <div class="characteristics__deskdesktop">
@@ -303,22 +298,24 @@
 </main>
 
 <footer class="footer">
-  <img class="footer__slanted" src="./assets/img/SLANTED_SMOL.png"></img>
-  <p class="footer__text">
-        <?php
-          echo $footer;
-        ?>
-  </p>
-  <a href="https://www.slanted.de/"><div class="footer__font"><img class="font__picture" src="./assets/img/futura.jpeg"></img>
-  <div class="font__content--wrapper">
-    <div class="font__content">
-    <h3 class="font__title">CHECK OUT LAST WEEKS FONT</h3><p class="font__text">When thinking of the vast amount of typefaces that have been produced over the last century, we often first recall the ones that have remained timeless even amidst the different design movements. For many designers and people alike, Futura, a sans serif typeface, is first on the list when choosing a typeface for a design....</p></div>
-  </div></div></a>
-  <div class="footer__socials">
-  <a href="https://twitter.com/slanted_blog?s=20"><img class="socials__twitter" src="./assets/img/twitter.svg"></img></a>
-  <a href="https://www.facebook.com/slanted.blog.magazine/"><img class="socials__facebook" src="./assets/img/facebook.svg"></img></a>
-  <a href="https://www.instagram.com/slanted_publishers"><img class="socials__instagram" src="./assets/img/instagram.svg"></img></a>
-  <a href="https://www.youtube.com/user/SLANTEDde"><img class="socials__youtube" src="./assets/img/youtube.svg"></img></a>
+  <div class="footer__content">
+    <img class="footer__slanted" src="./assets/img/SLANTED_SMOL.png"></img>
+    <p class="footer__text">
+          <?php
+            echo $footer;
+          ?>
+    </p>
+    <a href="https://www.slanted.de/"><div class="footer__font"><img class="font__picture" src="./assets/img/futura.jpeg"></img>
+    <div class="font__content--wrapper">
+      <div class="font__content">
+      <h3 class="font__title">CHECK OUT LAST WEEKS FONT</h3><p class="font__text">When thinking of the vast amount of typefaces that have been produced over the last century, we often first recall the ones that have remained timeless even amidst the different design movements. For many designers and people alike, Futura, a sans serif typeface, is first on the list when choosing a typeface for a design....</p></div>
+    </div></div></a>
+    <div class="footer__socials">
+    <a href="https://twitter.com/slanted_blog?s=20"><img class="socials__twitter" src="./assets/img/twitter.svg"></img></a>
+    <a href="https://www.facebook.com/slanted.blog.magazine/"><img class="socials__facebook" src="./assets/img/facebook.svg"></img></a>
+    <a href="https://www.instagram.com/slanted_publishers"><img class="socials__instagram" src="./assets/img/instagram.svg"></img></a>
+    <a href="https://www.youtube.com/user/SLANTEDde"><img class="socials__youtube" src="./assets/img/youtube.svg"></img></a>
+    </div>
+    <p class="footer__license">&copy; slanted publishers 2022</p>
   </div>
-  <p class="footer__license">&copy; slanted publishers 2022</p>
 </footer>

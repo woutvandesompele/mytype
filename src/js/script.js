@@ -82,6 +82,8 @@ const characterHover = () => {
   paths.forEach(el => {
     el.addEventListener('mouseover', e => {
       desc.innerHTML = e.target.dataset.desc;
+      const desces = e.target.dataset.desc;
+      console.log(desces);
     }, false);
     el.addEventListener('mouseout', () => {
       desc.innerHTML = '';
@@ -126,7 +128,6 @@ const initScrollTrigger = () => {
       scrub: true,
       start: 'top center',
       end: 'center center',
-      markers: true,
       ease: 'Power4.easeOut'
     },
   });
@@ -139,7 +140,6 @@ const initScrollTrigger = () => {
       scrub: true,
       start: 'top center',
       end: 'center center',
-      markers: true,
       ease: 'Power4.easeOut'
     },
   });
@@ -152,7 +152,7 @@ const initScrollTrigger = () => {
       const svg = document.querySelector('.characteristics__characteristics');
       const imgContainer = document.querySelector('.img-container');
       gsap.to(svg, {
-        xPercent: - (imgContainer.offsetWidth/10),
+        xPercent: - (imgContainer.offsetWidth / 10),
         ease: 'none',
         scrollTrigger: {
           trigger: '.img-container',
@@ -164,11 +164,11 @@ const initScrollTrigger = () => {
       });
     }
 
-  })
+  });
 
+};
 
-
-  /*
+/*
   gsap.set('.scroller', {
   //x: -(window.innerWidth * 3.0)
     x: - (document.querySelector('.scroller').offsetWidth - window.innerWidth)
@@ -193,7 +193,7 @@ const initScrollTrigger = () => {
     });
 */
 
-};
+
 
 /*
 
