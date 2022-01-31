@@ -6,9 +6,55 @@ export const init = () => {
   gsap.registerPlugin(ScrollTrigger);
   initScrollTrigger();
   checkQuestionmark();
+  hoverQuestionmark();
   characterHover();
   // tipoHover();
   dieHover();
+};
+
+const hoverQuestionmark = () => {
+
+  const questionmark1 = document.querySelector('.grid__questionmark--desktop1');
+  const questionmark2 = document.querySelector('.grid__questionmark--desktop2');
+  const img1 = questionmark1.querySelector('img');
+  const img2 = questionmark2.querySelector('img');
+  const reveal1 = () => {
+    img1.style.display = 'none';
+  };
+  const reveal2 = () => {
+    img2.style.display = 'none';
+  };
+  const dissapear1 = () => {
+    img1.style.display = 'block';
+  };
+  const dissapear2 = () => {
+    img2.style.display = 'block';
+  };
+  document.querySelector('.grid__questionmark--desktop1').addEventListener('mouseover', reveal1);
+  document.querySelector('.grid__questionmark--desktop1').addEventListener('mouseout', dissapear1);
+  document.querySelector('.grid__questionmark--desktop2').addEventListener('mouseover', reveal2);
+  document.querySelector('.grid__questionmark--desktop2').addEventListener('mouseout', dissapear2);
+
+
+
+  // const reveal = () => {
+  //   const questionmark = document.querySelectorAll('.grid__questionmark--desktopr');
+  //   console.log(questionmark);
+  //   var cl = Array.from(questionmark)
+  //   var ll = cl.target.className;
+  //   console.log(cl);
+  //   //const img = questionmark.querySelector('img');
+  //   if (questionmark.classList.contains('.grid__questionmark--desktop1'))
+  //     img.style.display = 'none';
+  //    };
+  // const dissapear = () => {
+  //   img.style.display = 'block';
+  // };
+  // const questions = document.querySelectorAll('.grid__questionmark--desktopr');
+  // for (var i = 0; i < questions.length; i++) {
+  //   questions[i].addEventListener('mouseover', reveal);
+  //   questions[i].addEventListener('mouseout', dissapear);
+  // }
 };
 
 const checkQuestionmark = () => {
@@ -18,6 +64,7 @@ const checkQuestionmark = () => {
     const content = document.querySelector('.talents__content--mobile');
     if (questionmark.style.display === 'none') {
       questionmark.style.display = 'block';
+      questionmark.style.margin = '0 auto';
       content.style.display = 'none';
     } else {
       questionmark.style.display = 'none';
@@ -60,10 +107,10 @@ const tipoHover = () => {
 
 const dieHover = () => {
   const body = document.body;
-  const span = document.querySelector(".died"),
-    hover = gsap.to(body, {backgroundColor: "black", paused: true, duration: 0.3});
-  span.addEventListener("mouseenter", () => {hover.play();});
-  span.addEventListener("mouseleave", () => {hover.reverse();});
+  const span = document.querySelector('.died'),
+    hover = gsap.to(body, {backgroundColor: 'black', paused: true, duration: 0.3});
+  span.addEventListener('mouseenter', () => {hover.play();});
+  span.addEventListener('mouseleave', () => {hover.reverse();});
 };
 
 
@@ -99,7 +146,7 @@ const initScrollTrigger = () => {
 
 
 
-
+ScrollTrigger.matchMedia ()
 
   const svg = document.querySelector('.characteristics__characteristics');
   const imgContainer = document.querySelector('.img-container');

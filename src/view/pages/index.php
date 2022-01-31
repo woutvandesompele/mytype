@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="header__nav"><a class="header__link"><img class="header__slanted" src="./assets/img/slanted.png"></img></a></div>
+  <div class="header__nav"><a href="https://www.slanted.de/" class="header__link"><img class="header__slanted" src="./assets/img/slanted.png"></img></a></div>
 </header>
 
 <main class="main">
@@ -99,14 +99,14 @@
 
   <section class="uncertainty">
     <div class="uncertainty__content">
-    <h2 class="uncertainty__title"><?php echo $uncertainty_title ?></h2>
-    <div class="uncertainty__text">
-      <p>
-        <?php
-          echo $uncertainty;
-        ?>
-      </p>
-    </div>
+      <h2 class="uncertainty__title"><?php echo $uncertainty_title ?></h2>
+        <div class="uncertainty__text">
+          <p>
+            <?php
+              echo $uncertainty;
+            ?>
+          </p>
+        </div>
     </div>
   </section>
 
@@ -115,10 +115,11 @@
     <div class="talents__reveal--mobile">
       <div class="questionmark__wrapper--mobile"><img class="talents__questionmark--mobile" src="./assets/img/questionmark.svg"></img></div>
       <div class="talents__content--mobile">
-        <div  class="talents__text1--mobile">
+        <div  class="talents__text1--mobile talents__text--mobile">
           <?php echo $talents1 ?>
         </div>
-        <div  class="talents__text2--mobile">
+        <br><br>
+        <div  class="talents__text2--mobile talents__text--mobile">
           <?php echo $talents2 ?>
         </div>
       </div>
@@ -149,7 +150,7 @@
               <img class="img-top" src="./assets/img/questdown-pink.svg">
             </div>
         <?php endfor;?>
-        <div class="grid__questionmark--desktop">
+        <div class="grid__questionmark--desktop grid__questionmark--desktop1 grid__questionmark--desktopr">
           <img class="dissapear" src="./assets/img/questup.svg">
           <p class="img-top talents__text--desktop"><?php echo $talents1 ?></p>
         </div>
@@ -163,7 +164,7 @@
               <img class="img-top" src="./assets/img/questup-pink.svg">
             </div>
         <?php endfor;?>
-        <div class="grid__questionmark--desktop">
+        <div class="grid__questionmark--desktop grid__questionmark--desktop2 grid__questionmark--desktopr">
           <img src="./assets/img/questdown.svg">
           <p class="img-top text__talents2 talents__text--desktop"><?php echo $talents2 ?></p>
         </div>
@@ -259,11 +260,11 @@
     </div>
   </section>
 
-  <section class="end">
+  <!--<section class="end">
     <p>Thanks to</p>
     <p>Margheritta Dall'Aglio Bodoni</p>
     <p>the legacy lives on</p>
-  </section>
+  </section>-->
 
 
 </main>
@@ -275,14 +276,16 @@
           echo $footer;
         ?>
   </p>
-  <div class="footer__magazine"><img class="magazine__picture" src="./assets/img/slanted_book.jpg" height=222px></img>
-  <div class="magazine__content">
-  <h3 class="magazine__title">CHECK OUT OUR<br> LATEST MAGAZINE</h3><p class="magazine__text">The issue celebrates happiness, joy of life, power, symbolism, and the meaning of color. We look...</p></div></div>
+  <a href="https://www.slanted.de/"><div class="footer__font"><img class="font__picture" src="./assets/img/futura.jpeg"></img>
+  <div class="font__content--wrapper">
+    <div class="font__content">
+    <h3 class="font__title">CHECK OUT LAST WEEKS FONT</h3><p class="font__text">When thinking of the vast amount of typefaces that have been produced over the last century, we often first recall the ones that have remained timeless even amidst the different design movements. For many designers and people alike, Futura, a sans serif typeface, is first on the list when choosing a typeface for a design....</p></div>
+  </div></div></a>
   <div class="footer__socials">
-  <img class="socials__twitter" src="./assets/img/twitter.svg"></img>
-  <img class="socials__facebook" src="./assets/img/facebook.svg"></img>
-  <img class="socials__instagram" src="./assets/img/instagram.svg"></img>
-  <img class="socials__youtube" src="./assets/img/youtube.svg"></img>
+  <a href="https://twitter.com/slanted_blog?s=20"><img class="socials__twitter" src="./assets/img/twitter.svg"></img></a>
+  <a href="https://www.facebook.com/slanted.blog.magazine/"><img class="socials__facebook" src="./assets/img/facebook.svg"></img></a>
+  <a href="https://www.instagram.com/slanted_publishers"><img class="socials__instagram" src="./assets/img/instagram.svg"></img></a>
+  <a href="https://www.youtube.com/user/SLANTEDde"><img class="socials__youtube" src="./assets/img/youtube.svg"></img></a>
   </div>
   <p class="footer__license">&copy; slanted publishers 2022</p>
 </footer>
