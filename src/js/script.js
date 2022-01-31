@@ -148,18 +148,18 @@ const initScrollTrigger = () => {
 
   ScrollTrigger.matchMedia ({
 
-    "(max-width: 1000px)": function() {
+    '(max-width: 1000px)': function() {
       const svg = document.querySelector('.characteristics__characteristics');
       const imgContainer = document.querySelector('.img-container');
       gsap.to(svg, {
-        xPercent: - imgContainer.offsetWidth,
+        xPercent: - (imgContainer.offsetWidth/10),
         ease: 'none',
         scrollTrigger: {
           trigger: '.img-container',
           pin: true,
           start: 'top center',
           scrub: 1,
-          end: () => `+=${ (imgContainer.offsetWidth - innerWidth) * 10}`
+          end: () => `+=${ (imgContainer.offsetWidth - innerWidth)}`
         }
       });
     }

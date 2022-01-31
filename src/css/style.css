@@ -333,6 +333,10 @@ a {
   font-size: 2.25rem;
 }
 
+.characteristics__characteristics {
+  min-height: 25rem;
+}
+
 .scroller {
   min-width: 70rem;
   height: 20rem;
@@ -403,6 +407,10 @@ rect {
   font-size: 2rem;
   font-family: Bodoni, serif;
   margin: 0 auto;
+}
+
+.characteristics__deskdesktop {
+  display: none;
 }
 
 /* FOOTER */
@@ -787,6 +795,10 @@ rect {
 
 @media only screen and (min-width: 768px) {
 
+  .intro__img {
+    width: 100%;
+  }
+
   .italy {
     background-image: url(../assets/img/italy_background_desktop.svg);
     background-repeat: no-repeat;
@@ -878,6 +890,12 @@ rect {
   }
 
 }
+
+@media only screen and (min-width: 1000px) {
+
+
+}
+
 
 @media only screen and (min-width: 1024px) {
 

@@ -221,11 +221,36 @@
   </section>
 
   <section class="characteristics">
+
     <div class="characteristics__desktop">
       <div class="img-container scroller">
         <svg
           version="1.1"
           class="characteristics__characteristics"
+              >
+          <image
+            preserveAspectRatio="none"
+            href="./assets/img/characteristics_mobile.svg"
+            class="characteristics__img"
+            id=""
+            height="408px";
+            width="1144px";
+          />
+        </svg>
+      </div>
+      <div class="desc-container--wrapper">
+        <div class="desc-container">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="characteristics__deskdesktop">
+      <div class="img-container scroller">
+        <svg
+          version="1.1"
+          class="characteristics__svg--desktop"
               >
           <image
             preserveAspectRatio="none"
@@ -246,16 +271,22 @@
     </div>
 
 
-    <div class="characteristics__desktop">
+    <!-- <div class="characteristics__mobile">
       <div class="img-container scroller">
-        <img class="characteristics__img--mobile" src="./assets/img/SLANTED_SMOL.png"></img>
-      </div>
-      <div class="desc-container--wrapper">
-        <div class="desc-container">
-        </div>
+        <svg
+          version="1.1"
+          class="characteristics__img--mobile"
+              >
+          <image
+            preserveAspectRatio="none"
+            href="./assets/img/characteristics_mobile.svg"
+            id=""
+          />
+        </svg>
+        <img class="characteristics__img--mobile" src="./assets/img/characteristics_mobile.svg"></img>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!--<section class="end">
     <p>Thanks to</p>
